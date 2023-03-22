@@ -81,11 +81,143 @@ export const mockData = {
     eraStyle: {
         image: "",
         description: [ "feminine", "vintage", "50s"],
-        keyPieces: [ "tea-length skirs", "red lipstick", "kitten heels", "lace-up oxfords"]
+        keyPieces: [ "tea-length skirts", "red lipstick", "kitten heels", "lace-up oxfords"]
     },
     eraIconicQuote: "The idea you had of me, who was she? A never-needy, ever-lovely jewel whose shine reflects on you",
     ownsMastersOfEra: true,
     eraInspiration: ["fading romance", "heartbreak", "toxic relationships", "the uncertainty and excitement of early adulthood"]
+  },
+  1989: {
+    eraID: 5,
+    albumOfEra: {
+      name: "1989",
+      genre: "Synth Pop",
+      rating: 7.7,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 13,
+      dateReleased: "27/10/2014"
+    },
+    eraDescription: "",
+    eraColorScheme: ["tan", "light blue"],
+    eraStyle: {
+        image: "",
+        description: [ "city chic", "off-duty model"],
+        keyPieces: [ "co-ordinated sets", "crop tops", "stilettos"]
+    },
+    eraIconicQuote: "But you'll come back each time you leave 'cause, darling, I'm a nightmare dressed like a daydream.",
+    ownsMastersOfEra: false,
+    eraInspiration: ["being young in a big city", "lighthearted approach to failed relationships", "media scruitiny of her relationships"]
+  },
+  reputation: {
+    eraID: 6,
+    albumOfEra: {
+      name: "Reputation",
+      genre: "Electropop",
+      rating: 6.5,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 15,
+      dateReleased: "10/11/2017"
+    },
+    eraDescription: "",
+    eraColorScheme: ["black", "white", "silver"],
+    eraStyle: {
+        image: "",
+        description: [ "grungey", "messy hot"],
+        keyPieces: [ "bomber jacket", "cargo pants", "thigh high boots"]
+    },
+    eraIconicQuote: "I never trust a narcissist, but they love me",
+    ownsMastersOfEra: false,
+    eraInspiration: ["revenge", "downsides of fame", "healthy romantic relationships", "betrayal"]
+  },
+  lover: {
+    eraID: 7,
+    albumOfEra: {
+      name: "Lover",
+      genre: "Electropop",
+      rating: 7.1,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 18,
+      dateReleased: "23/08/2019"
+    },
+    eraDescription: "",
+    eraColorScheme: ["pastel pink", "hot pink", "pastel blue"],
+    eraStyle: {
+        image: "",
+        description: [ "pastel", "fun"],
+        keyPieces: [ "tie-dye tees", "butterfly heels", "pastel menswear"]
+    },
+    eraIconicQuote: "I used to believe love would be burning red, but it's golden",
+    ownsMastersOfEra: true,
+    eraInspiration: ["commitment", "healing unhealthy patterns", "feminism", "love"]
+  },
+  folklore: {
+    eraID: 8,
+    albumOfEra: {
+      name: "Folklore",
+      genre: "Indie folk",
+      rating: 8.0,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 16,
+      dateReleased: "24/07/2020"
+    },
+    eraDescription: "",
+    eraColorScheme: ["grey", "light orange", "light green", "brown"],
+    eraStyle: {
+        image: "",
+        description: [ "cottage core", "english countryside chic"],
+        keyPieces: [ "plaid check coat", "gingham skirt", "chunky boots"]
+    },
+    eraIconicQuote: "Isn't it just to pretty to think, all along there was some invisible string tying you to me?",
+    ownsMastersOfEra: true,
+    eraInspiration: ["escapism", "storytelling", "nostalgia", "empathy"]
+  },
+  evermore: {
+    eraID: 9,
+    albumOfEra: {
+      name: "Evermore",
+      genre: "Alternative rock",
+      rating: 7.9,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 15,
+      dateReleased: "11/12/2020"
+    },
+    eraDescription: "",
+    eraColorScheme: ["grey", "light orange", "light green", "brown"],
+    eraStyle: {
+        image: "",
+        description: [ "cottage core", "english countryside chic"],
+        keyPieces: [ "plaid check coat", "gingham skirt", "chunky boots"]
+    },
+    eraIconicQuote: "Life was a willow and it bent right to your wind",
+    ownsMastersOfEra: true,
+    eraInspiration: ["escapism", "complexities of human emotion", "grief"]
+  },
+  midnights: {
+    eraID: 10,
+    albumOfEra: {
+      name: "Midnights",
+      genre: "Dream pop",
+      rating: 7.0,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 15,
+      dateReleased: "21/10/2020"
+    },
+    eraDescription: "",
+    eraColorScheme: ["teal", "orange", "navy blue", "brown", "lilac"],
+    eraStyle: {
+        image: "",
+        description: [ "70s", "vintage"],
+        keyPieces: [ "corduroy ", "polo necks", "wide-legged trousers"]
+    },
+    eraIconicQuote: "It's me, hi I'm the problem, it's me",
+    ownsMastersOfEra: true,
+    eraInspiration: ["self-awareness", "reflection", "insecurity"]
   },
 };
 
