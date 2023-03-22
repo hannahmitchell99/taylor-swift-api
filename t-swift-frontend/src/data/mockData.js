@@ -65,6 +65,28 @@ export const mockData = {
     ownsMastersOfEra: false,
     eraInspiration: ["coming of age", "heartbreak", "transition into womanhood"]
   },
+  red: {
+    eraID: 4,
+    albumOfEra: {
+      name: "Red",
+      genre: "Country and Pop",
+      rating: 9.0,
+      cover: "",
+      peakChartPosition: 1,
+      numOfSongs: 14,
+      dateReleased: "22/10/2012"
+    },
+    eraDescription: "",
+    eraColorScheme: ["red", "light gold"],
+    eraStyle: {
+        image: "",
+        description: [ "feminine", "vintage", "50s"],
+        keyPieces: [ "tea-length skirs", "red lipstick", "kitten heels", "lace-up oxfords"]
+    },
+    eraIconicQuote: "The idea you had of me, who was she? A never-needy, ever-lovely jewel whose shine reflects on you",
+    ownsMastersOfEra: true,
+    eraInspiration: ["fading romance", "heartbreak", "toxic relationships", "the uncertainty and excitement of early adulthood"]
+  },
 };
 
 export default mockData;
