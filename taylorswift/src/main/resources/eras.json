@@ -5,11 +5,11 @@
     "albumOfEra": {
       "name": "Taylor Swift",
       "genre": "Country",
-      "rating": 6.7,
+      "rating": "6.7",
       "cover": "",
-      "peakChartPosition": 5,
-      "numOfSongs": 11,
-      "dateReleased": "24/10/2006"
+      "peakChartPosition": "5",
+      "numOfSongs": "11",
+      "dateReleased": "2006-10-26"
     },
     "eraDescription": "Taylor Swift's self-titled debut album was released in 2006. The album features country pop songs that were mainly written by Swift. The themes of the album focus on teenage love, heartbreak, and growing up. Swift was only 16 years old when she released this album, and her young age is reflected in the lyrics of the songs. The album was inspired by Swift's experiences in high school and her first few years in Nashville. The album's producer, Nathan Chapman, helped Swift craft a sound that combined country music with pop. The album received generally positive reviews and peaked at number five on the Billboard 200 chart.",
     "eraColorScheme": ["turquoise", "light green", "brown"],
@@ -28,13 +28,13 @@
     "albumOfEra": {
       "name": "Fearless",
       "genre": "Country",
-      "rating": 8.1,
+      "rating": "8.1",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 13,
-      "dateReleased": "11/11/2008"
+      "peakChartPosition": "1",
+      "numOfSongs": "13",
+      "dateReleased": "2008-11-11"
     },
-    "eraDescription": "",
+    "eraDescription": "Swift's second album, Fearless, was released in 2008. The album features a mix of country and pop songs that were also mainly written by Swift. The themes of the album focus on love, heartbreak, and the fear of growing up. The album was inspired by Swift's experiences in high school and her first few years in the music industry. The album's producers, Nathan Chapman and Swift, created a sound that was more pop-focused than Swift's debut album. Fearless received critical acclaim and won four Grammy Awards, including Album of the Year.",
     "eraColorScheme": ["gold", "warm yellow", "brown"],
     "eraStyle": {
       "image": "",
@@ -51,13 +51,13 @@
     "albumOfEra": {
       "name": "Speak Now",
       "genre": "Country",
-      "rating": 8.2,
+      "rating": "8.2",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 14,
-      "dateReleased": "25/10/2010"
+      "peakChartPosition": "1",
+      "numOfSongs": "14",
+      "dateReleased": "2010-10-25"
     },
-    "eraDescription": "",
+    "eraDescription": "Swift's third album, Speak Now, was released in 2010. The album features songs that were all written by Swift and produced by Nathan Chapman. The themes of the album focus on love, heartbreak, and standing up for oneself. The album was inspired by Swift's experiences in the music industry, as well as her personal life. Speak Now received positive reviews from critics and debuted at number one on the Billboard 200 chart. The album's lead single, \"Mine,\" was a commercial success, peaking at number three on the Billboard Hot 100 chart.",
     "eraColorScheme": ["deep purple", "mauve", "red"],
     "eraStyle": {
       "image": "",
@@ -74,13 +74,13 @@
     "albumOfEra": {
       "name": "Red",
       "genre": "Country and Pop",
-      "rating": 9.0,
+      "rating": "9.0",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 14,
-      "dateReleased": "22/10/2012"
+      "peakChartPosition": "1",
+      "numOfSongs": "14",
+      "dateReleased": "2012-10-22"
     },
-    "eraDescription": "",
+    "eraDescription": "Taylor Swift's fourth album, Red, was released in 2012. The album features a mix of pop and country songs that were mainly written by Swift. The themes of the album focus on love, heartbreak, and change. The album was inspired by Swift's experiences in relationships, and her transition from country music to pop. The album features collaborations with various artists, including Ed Sheeran and Gary Lightbody. Red received positive reviews and debuted at number one on the Billboard 200 chart.",
     "eraColorScheme": ["red", "light gold"],
     "eraStyle": {
       "image": "",
@@ -97,13 +97,13 @@
     "albumOfEra": {
       "name": "1989",
       "genre": "Synth Pop",
-      "rating": 7.7,
+      "rating": "7.7",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 13,
-      "dateReleased": "27/10/2014"
+      "peakChartPosition": "1",
+      "numOfSongs": "13",
+      "dateReleased": "2014-10-27"
     },
-    "eraDescription": "",
+    "eraDescription": "Taylor Swift's fifth album, 1989, was released in 2014. The album features a pop sound and was mainly written by Swift. The themes of the album focus on love, heartbreak, and self-discovery. The album was inspired by Swift's move to New York City and her experiences living in the city. The album features collaborations with various artists, including Jack Antonoff and Ryan Tedder. 1989 received critical acclaim and won three Grammy Awards, including Album of the Year.",
     "eraColorScheme": ["tan", "light blue"],
     "eraStyle": {
       "image": "",
@@ -120,13 +120,13 @@
     "albumOfEra": {
       "name": "Reputation",
       "genre": "Electropop",
-      "rating": 6.5,
+      "rating": "6.5",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 15,
-      "dateReleased": "10/11/2017"
+      "peakChartPosition": "1",
+      "numOfSongs": "15",
+      "dateReleased": "2017-10-11"
     },
-    "eraDescription": "",
+    "eraDescription": "Taylor Swift's sixth album, Reputation, was released in 2017. The album features a pop sound with elements of electronic music and was mainly written by Swift. The themes of the album focus on fame, reputation, and self-discovery. The album was inspired by Swift's experiences with media scrutiny and her personal life. The album features collaborations with various artists, including Max Martin and Shellback. Reputation received mixed reviews, with some critics praising Swift's experimentation with new sounds and others criticizing the album's lack of cohesiveness. However, the album was a commercial success, debuting at number one on the Billboard 200 chart.",
     "eraColorScheme": ["black", "white", "silver"],
     "eraStyle": {
       "image": "",
@@ -143,13 +143,13 @@
     "albumOfEra": {
       "name": "Lover",
       "genre": "Electropop",
-      "rating": 7.1,
+      "rating": "7.1",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 18,
-      "dateReleased": "23/08/2019"
+      "peakChartPosition": "1",
+      "numOfSongs": "18",
+      "dateReleased": "2019-08-23"
     },
-    "eraDescription": "",
+    "eraDescription": "Taylor Swift's seventh album, Lover, was released in 2019. The album features a mix of pop and alternative pop sounds and was mainly written by Swift. The themes of the album focus on love, heartbreak, and happiness. The album was inspired by Swift's personal life, including her relationship with actor Joe Alwyn. The album features collaborations with various artists, including Brendon Urie and Joel Little. Lover received generally positive reviews and debuted at number one on the Billboard 200 chart.",
     "eraColorScheme": ["pastel pink", "hot pink", "pastel blue"],
     "eraStyle": {
       "image": "",
@@ -166,13 +166,13 @@
     "albumOfEra": {
       "name": "Folklore",
       "genre": "Indie folk",
-      "rating": 8.0,
+      "rating": "8.0",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 16,
-      "dateReleased": "24/07/2020"
+      "peakChartPosition": "1",
+      "numOfSongs": "16",
+      "dateReleased": "2020-07-24"
     },
-    "eraDescription": "",
+    "eraDescription": "Taylor Swift's eighth album, Folklore, was a surprise release in 2020. The album features a more alternative sound and was mainly written by Swift during the COVID-19 pandemic. The themes of the album focus on nostalgia, escapism, and storytelling. The album was inspired by Swift's imagination and her love for storytelling. The album features collaborations with Aaron Dessner of The National and Jack Antonoff. Folklore received critical acclaim and was praised for its songwriting and production.",
     "eraColorScheme": ["grey", "light orange", "light green", "brown"],
     "eraStyle": {
       "image": "",
@@ -189,13 +189,13 @@
     "albumOfEra": {
       "name": "Evermore",
       "genre": "Alternative rock",
-      "rating": 7.9,
+      "rating": "7.9",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 15,
+      "peakChartPosition": "1",
+      "numOfSongs": "15",
       "dateReleased": "11/12/2020"
     },
-    "eraDescription": "",
+    "eraDescription": "Evermore is Taylor Swift's ninth studio album and was released in 2020 as a sister album to Folklore. The album features indie folk and alternative sounds and was mainly written by Swift. The themes of the album focus on love, heartbreak, and personal growth. The album was inspired by Swift's experiences during the COVID-19 pandemic and her desire to create a sense of connection with her fans. The album features collaborations with various artists, including Bon Iver and The National. Evermore received critical acclaim, with many praising Swift's storytelling and musical experimentation. The album debuted at number one on the Billboard 200 chart and was nominated for Album of the Year at the 64th Annual Grammy Awards.",
     "eraColorScheme": ["grey", "light orange", "light green", "brown"],
     "eraStyle": {
       "image": "",
@@ -212,13 +212,13 @@
     "albumOfEra": {
       "name": "Midnights",
       "genre": "Dream pop",
-      "rating": 7.0,
+      "rating": "7.0",
       "cover": "",
-      "peakChartPosition": 1,
-      "numOfSongs": 15,
+      "peakChartPosition": "1",
+      "numOfSongs": "15",
       "dateReleased": "21/10/2020"
     },
-    "eraDescription": "",
+    "eraDescription": " A concept album about nocturnal ruminations, Midnights was written and produced by Swift with longtime collaborator Jack Antonoff. Inspired by Swift's 'sleepless nights', Midnights contains confessional yet cryptic lyrics, exploring anxiety, insecurity, self-criticism, self-awareness, insomnia, and self-confidence. Expanding on the synth-pop sound of Swift's previous pop projects, the album experiments with electronica, dream pop, bedroom pop, and chill-out music styles.",
     "eraColorScheme": ["teal", "orange", "navy blue", "brown", "lilac"],
     "eraStyle": {
       "image": "",
