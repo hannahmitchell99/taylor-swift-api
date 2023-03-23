@@ -8,13 +8,10 @@ public class Era {
     private String eraName;
     private long eraId;
     private HashMap<String, String> albumOfEra;
-
-    // name, genre, rating, cover, peakChartPosition, numOfSongs, dateReleased
     private String eraDescription;
     private ArrayList<String> eraColorScheme;
     private HashMap<String, ArrayList<String>> eraStyle;
 
-    //image, description, keyPieces
     private String eraIconicQuote;
     private boolean ownsMastersOfEra;
     private ArrayList<String> eraInspiration;

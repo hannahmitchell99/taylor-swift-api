@@ -39,13 +39,13 @@ public class ErasInitializer {
                 JSONObject eraJSON = (JSONObject) era;
 
                 String eraName = (String) eraJSON.get("eraName");
-                long eraId = (long) eraJSON.get("id");
+                long eraId = (long) eraJSON.get("eraID");
                 HashMap<String, String> albumOfEra = (HashMap<String, String>) eraJSON.get("albumOfEra");
                 String eraDescription = (String) eraJSON.get("eraDescription");
                 ArrayList<String> eraColorScheme = (ArrayList<String>) eraJSON.get("eraColorScheme");
                 HashMap<String, ArrayList<String>> eraStyle = (HashMap<String, ArrayList<String>>) eraJSON.get("eraStyle");
                 String eraIconicQuote = (String) eraJSON.get("eraIconicQuote");
-                boolean ownsMastersOfEra = (boolean) eraJSON.get("nationality");
+                boolean ownsMastersOfEra = (boolean) eraJSON.get("ownsMastersOfEra");
                 ArrayList<String> eraInspiration = (ArrayList<String>) eraJSON.get("eraInspiration");
 
                 // HOW CAN WE USE THIS DATA?

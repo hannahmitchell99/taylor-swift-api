@@ -7,7 +7,7 @@ import java.util.ArrayList;
 @Repository
 public class ErasRepository {
 
-    private ArrayList<Era> eras = new ArrayList<>();
+    private final ArrayList<Era> eras = new ArrayList<>();
 
     public String addEra(Era era){
         eras.add(era);
