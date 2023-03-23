@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Era {
 
     private String eraName;
-    private int eraId;
+    private long eraId;
     private HashMap<String, String> albumOfEra;
 
     // name, genre, rating, cover, peakChartPosition, numOfSongs, dateReleased
@@ -22,7 +22,7 @@ public class Era {
     public Era() {
     }
 
-    public Era(String eraName, int eraId, HashMap<String, String> albumOfEra, String eraDescription, ArrayList<String> eraColorScheme, HashMap<String, ArrayList<String>> eraStyle, String eraIconicQuote, boolean ownsMastersOfEra, ArrayList<String> eraInspiration) {
+    public Era(String eraName, long eraId, HashMap<String, String> albumOfEra, String eraDescription, ArrayList<String> eraColorScheme, HashMap<String, ArrayList<String>> eraStyle, String eraIconicQuote, boolean ownsMastersOfEra, ArrayList<String> eraInspiration) {
         this.eraName = eraName;
         this.eraId = eraId;
         this.albumOfEra = albumOfEra;
@@ -42,11 +42,11 @@ public class Era {
         this.eraName = eraName;
     }
 
-    public int getEraId() {
+    public long getEraId() {
         return eraId;
     }
 
-    public void setEraId(int eraId) {
+    public void setEraId(long eraId) {
         this.eraId = eraId;
     }
 
