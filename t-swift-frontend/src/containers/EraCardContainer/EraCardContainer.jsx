@@ -1,4 +1,5 @@
 import "../EraCardContainer/EraCardContainer.scss"
+import EraCard from "../../components/EraCard/EraCard"
 
 const EraCardContainer = ({eras}) => {
 

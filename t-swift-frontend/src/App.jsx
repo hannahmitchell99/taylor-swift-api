@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import EraCardContainer from "./containers/EraCardContainer/EraCardContainer";
 import Nav from "./containers/Nav/Nav";
