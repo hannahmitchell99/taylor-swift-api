@@ -6,7 +6,7 @@ const EraCard = ({name, description, albumCover, eraIconicQuote}) => {
         <div className="era-card">
         <div className="era-card__info">
           <h2 className="era-card__info--heading">{name}</h2>
-          <img className="era-card__image" src={albumCover} alt={name} />
+          <img className="era-card__info--image" src={albumCover} alt={name} />
           <div className="era-card__info--description">
           {description} {eraIconicQuote}
           </div>
