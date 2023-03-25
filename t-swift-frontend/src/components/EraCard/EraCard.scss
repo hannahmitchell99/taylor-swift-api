@@ -1,0 +1,12 @@
+.era-card{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+}
