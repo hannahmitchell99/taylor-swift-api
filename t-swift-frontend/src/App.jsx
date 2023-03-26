@@ -3,6 +3,7 @@ import "./App.scss";
 import EraCardContainer from "./containers/EraCardContainer/EraCardContainer";
 import Nav from "./containers/Nav/Nav";
 import { PageAlbumCardContainer } from "./containers/PageAlbumCardContainer/PageAlbumCardContainer";
+import { PageStyleCardContainer } from "./containers/PageStyleCardContainer/PageStyleCardContainer";
 
 const App = () => {
   const [eras, setEraType] = useState([]);
@@ -22,6 +23,7 @@ const App = () => {
       <Nav />
       <EraCardContainer eras={eras}/>
       <PageAlbumCardContainer eras={eras}/>
+      <PageStyleCardContainer eras={eras}/>
     </div>
   );
 };

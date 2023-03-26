@@ -1,7 +1,7 @@
 import React from 'react'
 import "../PageAlbumCard/PageAlbumCard.scss"
 
-const PageAlbumCard = ({name, rating, date, chart, numOfSongs, genre, ownsMasters, albumCover}) => {
+const PageAlbumCard = ({name, rating, date, chart, numOfSongs, genre, albumCover}) => {
   return (
     <div className='album-card'>
         <h2 className='album-card__name'>{name}</h2>
@@ -11,7 +11,6 @@ const PageAlbumCard = ({name, rating, date, chart, numOfSongs, genre, ownsMaster
             <div className='album-card__info--chart'>Peak Billboard Position: {chart}</div>
             <div className='album-card__info--songs'>Number of Songs: {numOfSongs}</div>
             <div className='album-card__info--genre'>Genre: {genre}</div>
-            <div className='album-card__info--masters'>{ownsMasters}</div>
         </div>
         <div className='album-card__cover'>
         <img className="album-card__cover--image" src={albumCover} alt={name} />

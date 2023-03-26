@@ -4,7 +4,7 @@ import PageAlbumCard from '../../components/PageAlbumCard/PageAlbumCard'
 
 export const PageAlbumCardContainer = ({eras}) => {
     const albumsJSX = eras.map((era) => {
-        return <PageAlbumCard  name = {era.albumOfEra.name}  albumCover = {era.albumOfEra.cover} genre = {era.albumOfEra.genre} rating = {era.albumOfEra.rating} date={era.albumOfEra.dateReleased} chart = {era.albumOfEra.peakChartPosition} numOfSongs={era.albumOfEra.numOfSongs} ownsMasters={era.ownsMastersOfEra}key = {era.eraId}/>
+        return <PageAlbumCard  name = {era.albumOfEra.name}  albumCover = {era.albumOfEra.cover} genre = {era.albumOfEra.genre} rating = {era.albumOfEra.rating} date={era.albumOfEra.dateReleased} chart = {era.albumOfEra.peakChartPosition} numOfSongs={era.albumOfEra.numOfSongs} key = {era.eraId}/>
     })
 
   return (
