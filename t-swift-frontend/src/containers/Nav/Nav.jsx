@@ -1,10 +1,11 @@
+import NavSearch from "../../components/NavSearchBar/NavSearchBar"
 import "../Nav/Nav.scss"
 
-const Nav = () => {
+const Nav = ({handleInput}) => {
 
     return (
       <div className = "nav">
-        Nav
+        <NavSearch handleInput={handleInput}/>
         </div>
     )
   }

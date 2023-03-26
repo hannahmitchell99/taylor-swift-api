@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 
 const App = () => {
   const [eras, setEras] = useState([]);
+  const [input, setInput] = useState("")
 
   const getEras = async () => {
     const res = await fetch("http://localhost:8080/eras");
@@ -17,11 +18,16 @@ const App = () => {
     getEras();
   },[])
 
+  const handleInput = (event) => {
+    setInput(event.target.value);
+    console.log(input)
+  }
+
   return (
     <Router>
       <div className="app">
       <Routes>
-          <Route path="/" element={<Home eras={eras}/>} />
+          <Route path="/" element={<Home eras={eras} handleInput = {handleInput}/>} />
       </Routes>
       </div>
     </Router>
