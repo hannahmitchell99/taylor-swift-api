@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import EraCardContainer from "./containers/EraCardContainer/EraCardContainer";
 import Nav from "./containers/Nav/Nav";
+import { PageAlbumCardContainer } from "./containers/PageAlbumCardContainer/PageAlbumCardContainer";
 
 const App = () => {
   const [eras, setEraType] = useState([]);
@@ -18,9 +19,9 @@ const App = () => {
 
   return (
     <div className="App">
-      App
       <Nav />
       <EraCardContainer eras={eras}/>
+      <PageAlbumCardContainer eras={eras}/>
     </div>
   );
 };

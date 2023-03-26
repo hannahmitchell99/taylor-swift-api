@@ -4,13 +4,13 @@ import "../PageAlbumCard/PageAlbumCard.scss"
 const PageAlbumCard = ({name, rating, date, chart, numOfSongs, genre, ownsMasters, albumCover}) => {
   return (
     <div className='album-card'>
-        <div className='album-card__name'>{name}</div>
+        <h2 className='album-card__name'>{name}</h2>
         <div className='album-card__info'>
-            <div className='album-card__info--rating'>{rating}</div>
-            <div className='album-card__info--date'>{date}</div>
-            <div className='album-card__info--chart'>{chart}</div>
-            <div className='album-card__info--songs'>{numOfSongs}</div>
-            <div className='album-card__info--genre'>{genre}</div>
+            <div className='album-card__info--rating'>Pitchfork rating: {rating}</div>
+            <div className='album-card__info--date'>Date Released: {date}</div>
+            <div className='album-card__info--chart'>Peak Billboard Position: {chart}</div>
+            <div className='album-card__info--songs'>Number of Songs: {numOfSongs}</div>
+            <div className='album-card__info--genre'>Genre: {genre}</div>
             <div className='album-card__info--masters'>{ownsMasters}</div>
         </div>
         <div className='album-card__cover'>
