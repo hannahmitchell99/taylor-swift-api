@@ -19,8 +19,9 @@ const App = () => {
   },[])
 
   const handleInput = (event) => {
-    setInput(event.target.value);
     console.log(input)
+    setInput(event.target.value);
+    
   }
 
   return (
