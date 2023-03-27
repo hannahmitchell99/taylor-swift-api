@@ -1,3 +1,9 @@
 .nav{
     border: 2px solid green;
+    &__heading{
+        border: 2px solid pink;
+    }
+    &__filtering{
+        border: 2px solid blue;
+    }
 }

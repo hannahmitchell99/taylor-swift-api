@@ -1,13 +1,17 @@
-import NavSearch from "../../components/NavSearchBar/NavSearchBar"
-import "../Nav/Nav.scss"
+import NavSearch from "../../components/NavSearchBar/NavSearchBar";
+import "../Nav/Nav.scss";
 
-const Nav = ({handleInput}) => {
+const Nav = ({ handleInput }) => {
+  return (
+    <div className="nav">
+      <div className="nav__heading">
+        <h3 className="nav__heading--text">Taylor Swift</h3>
+      </div>
+      <div className="nav__filtering">
+        <NavSearch handleInput={handleInput} />
+      </div>
+    </div>
+  );
+};
 
-    return (
-      <div className = "nav">
-        <NavSearch handleInput={handleInput}/>
-        </div>
-    )
-  }
-  
-  export default Nav
+export default Nav;
