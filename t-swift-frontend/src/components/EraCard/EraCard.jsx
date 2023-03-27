@@ -4,9 +4,11 @@ const EraCard = ({name, albumCover, genre, eraIconicQuote, inspiration}) => {
 
     return (
         <div className="era-card">
-            <h2 className="era-card__heading">{name}</h2>
         <div className="era-card__info">
-          <img className="era-card__info--image" src={albumCover} alt={name} />
+          <h2 className="era-card__info--heading">{name}</h2>
+          <div className="era-card__info--image">
+          <img className="era-image" src={albumCover} alt={name} />
+          </div>
           <div className="era-card__info--genre">
             <p>{genre}</p>
           </div>
