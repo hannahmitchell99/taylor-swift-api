@@ -1,18 +1,74 @@
-.era-card{
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid black;
-    &__info{
-        display: flex;
-        flex-direction: column;
+@import "../../styles/variables";
 
-        &--image{
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-        }
+.era-card {
+  background-color: $colour-palestblue;
+  width: 30rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  &__heading {
+    font-family: $font-subheading;
+    color: $colour-paleblue;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr 1fr;
+    grid-template-rows: 1.3fr 1.2fr 0.9fr 0.9fr 0.7fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image image image image"
+      "image image image image"
+      "genre genre inspo inspo"
+      "quote quote quote quote"
+      "buttons buttons buttons buttons";
+    &--image {
+        border-radius: 10px;
+      max-width: 75%;
+      max-height: 100%;
+      display: block;
+      justify-self: center;
+      align-self: center;
+      grid-area: image;
     }
+    &--genre {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        color: $colour-navy;
+      grid-area: genre;
+      justify-self: center;
+      align-self: center;
+    }
+    &--inspo {
+      grid-area: inspo;
+      margin: 2rem;
+      justify-self: center;
+      align-self: center;
+    }
+    &--quote {
+        margin: 3rem;
+        text-align: center;
+      grid-area: quote;
+      justify-self: center;
+      align-self: center;
+      font-family: $font-subheading;
+      color: $colour-darklilac;
+      font-weight: 700;
+    }
+
+    &--buttons {
+      grid-area: buttons;
+      display: flex;
+      justify-content: space-evenly;
+      align-self: center;
+    }
+  }
+}
+
+.inspiration{
+    font-family: $font-content;
+    text-align: center;
+    color: $colour-navy;
 }
