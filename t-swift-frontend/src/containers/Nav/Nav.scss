@@ -1,9 +1,24 @@
+@import "../../styles/variables";
+
 .nav{
-    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
     &__heading{
         border: 2px solid pink;
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &--text{
+            font-family: $font-heading;
+            font-style: oblique;
+            font-size: 4rem;
+        }
     }
     &__filtering{
+        height: 10vh;
         border: 2px solid blue;
     }
 }
