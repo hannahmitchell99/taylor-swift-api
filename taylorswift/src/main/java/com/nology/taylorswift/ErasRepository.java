@@ -27,5 +27,14 @@ public class ErasRepository {
         return null;
     }
 
+    public boolean hasEra(long id){
+        for (Era era: eras) {
+            if(era.getEraId() == id){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
