@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 @RestController
@@ -15,19 +16,19 @@ import java.util.ArrayList;
 public class ErasController {
 
     @Autowired
-    ErasRepository erasRepository;
+    ErasService erasService;
 
     //CREATE
 
     //READ
     @GetMapping("/eras")
-    public ArrayList<Era> getEras(){
-        return erasRepository.getAllEras();
+    public List<Era> getEras(){
+        return erasService.getAllEras();
     }
 
     @GetMapping("/era/{id}")
     public Era getEraById(@PathVariable int id){
-        return erasRepository.getErasById(id);
+        return erasService.getErasById(id);
     }
 
     //UPDATE
