@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     height: 25vh;
+    background-color: $colour-lilac;
     &__heading{
-        background-color: $colour-lilac;
-        height: 20vh;
+        height: 15vh;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -20,7 +20,10 @@
         }
     }
     &__filtering{
-        height: 5vh;
-        background-color: $colour-lilac;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }

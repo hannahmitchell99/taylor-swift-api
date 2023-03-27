@@ -3,14 +3,14 @@ import "../NavSearchBar/NavSearchBar.scss";
 
 const NavSearch = ({ handleInput }) => {
   return (
-    <>
-      <label for="nav__searchbar">Search:</label>
+    <div className="nav-search">
+      <label for="nav-seach__searchbar">Search:</label>
       <input
         onChange={handleInput}
         type="text"
         className="nav__searchbar"
       ></input>
-    </>
+    </div>
   );
 };
 

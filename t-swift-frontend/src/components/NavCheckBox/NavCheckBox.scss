@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.nav-check{
+    margin-left: 5px;
+}
+
+label{
+    font-family: $font-subheading;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $colour-navy;
+}
+
+input{
+    background-color: $colour-offwhite;
+}
