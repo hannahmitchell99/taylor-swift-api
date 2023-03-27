@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.layout {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    background-color: $colour-offwhite;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .layout {
+      width:100vw;
+      background-color: $colour-offwhite;
+    }
+  }
