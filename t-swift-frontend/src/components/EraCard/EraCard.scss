@@ -11,20 +11,20 @@
   border: 1px solid black;
 
   &__info {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
       "name name name"
       "image image image"
       "image image image"
       "genre inspo inspo"
       "quote quote quote"
-      "buttons buttons buttons"; 
-  
+      "buttons buttons buttons";
+
     &--heading {
-        grid-area: name;
+      grid-area: name;
       font-family: $font-subheading;
       color: $colour-paleblue;
       justify-self: center;
@@ -75,7 +75,36 @@
   text-align: center;
   color: $colour-navy;
 }
-.era-image{
-    width: 100%;
-    height: 100%;
+.era-image {
+  width: 100%;
+  height: 100%;
+}
+
+.era-card__button {
+  font-family: $font-heading;
+  font-weight: 0;
+  font-size: 14px;
+  color: $colour-darklilac;
+  background-color: $colour-lilac;
+  padding: 10px 30px;
+  border: 2px solid $colour-darklilac;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 12px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.era-card__button:hover {
+  transition: 1000ms;
+  padding: 10px 28px;
+  transform: translateY(-0px);
+  background-color: $colour-offwhite;
+  color: $colour-darklilac;
+  border: solid 2px $colour-darklilac;
 }
