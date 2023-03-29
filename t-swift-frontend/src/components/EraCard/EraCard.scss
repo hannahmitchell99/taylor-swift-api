@@ -2,62 +2,80 @@
 
 .era-card {
   background-color: $colour-palestblue;
-  width: 500px;
-  height: 800px;
+  width: 600px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 30px;
   align-items: center;
-  border: 1px solid black;
-    &__heading {
-      font-family: $font-subheading;
-      color: $colour-paleblue;
-      font-size: 3rem;
-    }
-    &__image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &--image {
-        width: 75%;
-      }
-    }
-    &__genre {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: $font-heading;
-      font-size: 1.5rem;
-      color: $colour-navy;
-    }
-    &__inspo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.25rem;
-    }
-    &__quote {
-      text-align: center;
-      font-family: $font-subheading;
-      color: $colour-darklilac;
-      font-weight: 700;
-      font-size: 1.25rem;
-    }
-
-    &__buttons {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
+  padding: 30px;
+  gap: 10px;
+  border: 1px solid $colour-lilac;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px $colour-darklilac;
+  &__heading {
+    font-family: $font-subheading;
+    color: $colour-paleblue;
+    font-size: 3rem;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 179, 174);
+    width: 180px;
+    height: 180px;
+    box-shadow: 5px 5px 10px $colour-darklilac;
+  }
+  &__genre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    color: $colour-navy;
+  }
+  &__inspo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 10px;
+  }
+  &__quote {
+    text-align: center;
+    font-family: $font-subheading;
+    color: $colour-darklilac;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 10px;
   }
 
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+}
+.era-card-middle {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .inspiration {
   font-family: $font-content;
   text-align: center;
   color: $colour-navy;
 }
-
 
 .era-card__button {
   font-family: $font-heading;

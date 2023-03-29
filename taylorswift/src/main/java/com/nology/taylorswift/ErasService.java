@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 @Service
 public class ErasService {
@@ -14,30 +14,30 @@ public class ErasService {
     ErasRepository erasRepository;
 
     public void addEra(Era era) {
-        erasRepository.addEra(era);
+        erasRepository.save(era);
     }
-    public Era getErasById(long id) {
-        if(!erasRepository.hasEra(id)){
+    public Optional<Era> getErasById(long id) {
+        if(!erasRepository.existsById(id)){
             throw new EraNotFoundException();
         }
-        return erasRepository.getErasById(id);
+        return erasRepository.findById(id);
     }
 
-    public ArrayList<Era> ownsMastersOfEras() {
+    public List<Era> ownsMastersOfEras() {
         if(erasRepository.ownsMastersOfEras() == null){
             throw new EraNotFoundException();
         }
         return erasRepository.ownsMastersOfEras();
     }
 
-    public ArrayList<Era> highlyRated() {
+    public List<Era> highlyRated() {
         if(erasRepository.highlyRated() == null){
             throw new EraNotFoundException();
         }
         return erasRepository.highlyRated();
     }
 
-    public ArrayList<Era> highlyRatedAndMasters() {
+    public List<Era> highlyRatedAndMasters() {
         if(erasRepository.highlyRatedAndMasters() == null){
             throw new EraNotFoundException();
         }
@@ -46,7 +46,7 @@ public class ErasService {
 
 
     public List<Era> getAllEras() {
-        return erasRepository.getAllEras();
+        return erasRepository.findAll();
     }
 
 }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -26,28 +27,28 @@ public class ErasController {
         return erasService.getAllEras();
     }
 
-    @GetMapping("/era/{id}")
-    public Era getEraById(@PathVariable int id) {
+    @GetMapping("/eras/{id}")
+    public Optional<Era> getEraById(@PathVariable int id) {
         return erasService.getErasById(id);
     }
 
     @GetMapping("/eras/masters")
-    public ArrayList<Era> ownsMastersOfEras(){
+    public List<Era> ownsMastersOfEras(){
         return erasService.ownsMastersOfEras();
     }
 
     @GetMapping("/eras/rating")
-    public ArrayList<Era> highlyRated(){
+    public List<Era> highlyRated(){
         return erasService.highlyRated();
     }
 
     @GetMapping("/eras/rating/masters")
-    public ArrayList<Era> highlyRatedAndMasters(){
+    public List<Era> highlyRatedAndMasters(){
         return erasService.highlyRatedAndMasters();
     }
 
     @GetMapping("/eras/masters/rating")
-    public ArrayList<Era> mastersAndHighlyRatedAndMasters(){
+    public List<Era> mastersAndHighlyRatedAndMasters(){
         return erasService.highlyRatedAndMasters();
     }
 

@@ -1,72 +1,23 @@
 package com.nology.taylorswift;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-
-import static jdk.internal.math.FloatingDecimal.parseDouble;
-import static jdk.internal.math.FloatingDecimal.parseFloat;
+import java.util.List;
 
 @Repository
-public class ErasRepository {
+public interface ErasRepository extends JpaRepository<Era, Long> {
 
-    private final ArrayList<Era> eras = new ArrayList<>();
 
-    public String addEra(Era era) {
-        eras.add(era);
-        return "You added an era";
-    }
+    @Query(value = "SELECT * FROM eras WHERE ownsMastersOfEra = 'true'", nativeQuery = true)
+    List<Era> ownsMastersOfEras();
 
-    public ArrayList<Era> getAllEras() {
-        return eras;
-    }
+    @Query(value = "SELECT  * FROM eras WHERE json_value(albumOfEra,'$.rating')>'7.5'", nativeQuery = true)
+    List<Era> highlyRated();
 
-    public Era getErasById(long id) {
-        for (Era era : eras) {
-            if (era.getEraId() == id) {
-                return era;
-            }
-        }
-        return null;
-    }
-
-    public boolean hasEra(long id) {
-        for (Era era : eras) {
-            if (era.getEraId() == id) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public ArrayList<Era> ownsMastersOfEras() {
-        ArrayList<Era> mastersEras = new ArrayList<Era>();
-        for (Era era : eras) {
-            if (era.isOwnsMastersOfEra()) {
-                mastersEras.add(era);
-            }
-        }
-        return mastersEras;
-    }
-
-    public ArrayList<Era> highlyRated() {
-        ArrayList<Era> highRating = new ArrayList<Era>();
-        for (Era era : eras) {
-            if (Double.parseDouble(era.getAlbumOfEra().get("rating")) > (double) (7.7)) {
-                highRating.add(era);
-            }
-        }
-        return highRating;
-    }
-
-    public ArrayList<Era> highlyRatedAndMasters() {
-        ArrayList<Era> highRatingAndMasters = new ArrayList<Era>();
-        for (Era era : eras) {
-            if ((Double.parseDouble(era.getAlbumOfEra().get("rating")) > (double) (7.7)) && era.isOwnsMastersOfEra()) {
-                highRatingAndMasters.add(era);
-            }
-        }
-        return highRatingAndMasters;
-    }
+    @Query(value = "SELECT  * FROM eras WHERE json_value(albumOfEra,'$.rating')>'7.5' AND  ownsMastersOfEra = 'true'", nativeQuery = true)
+    List<Era> highlyRatedAndMasters();
 
 }

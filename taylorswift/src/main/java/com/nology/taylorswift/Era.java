@@ -1,12 +1,17 @@
 package com.nology.taylorswift;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.HashMap;
-
+@Entity
 public class Era {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long eraID;
     private String eraName;
-    private long eraId;
     private HashMap<String, String> albumOfEra;
     private String eraDescription;
     private ArrayList<String> eraColorScheme;
@@ -21,7 +26,7 @@ public class Era {
 
     public Era(String eraName, long eraId, HashMap<String, String> albumOfEra, String eraDescription, ArrayList<String> eraColorScheme, HashMap<String, ArrayList<String>> eraStyle, String eraIconicQuote, boolean ownsMastersOfEra, ArrayList<String> eraInspiration) {
         this.eraName = eraName;
-        this.eraId = eraId;
+        this.eraID = eraId;
         this.albumOfEra = albumOfEra;
         this.eraDescription = eraDescription;
         this.eraColorScheme = eraColorScheme;
@@ -40,11 +45,11 @@ public class Era {
     }
 
     public long getEraId() {
-        return eraId;
+        return eraID;
     }
 
     public void setEraId(long eraId) {
-        this.eraId = eraId;
+        this.eraID = eraId;
     }
 
     public HashMap<String, String> getAlbumOfEra() {
