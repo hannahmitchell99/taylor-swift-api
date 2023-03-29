@@ -37,6 +37,14 @@ public class ErasService {
         return erasRepository.highlyRated();
     }
 
+    public ArrayList<Era> highlyRatedAndMasters() {
+        if(erasRepository.highlyRatedAndMasters() == null){
+            throw new EraNotFoundException();
+        }
+        return erasRepository.highlyRatedAndMasters();
+    }
+
+
     public List<Era> getAllEras() {
         return erasRepository.getAllEras();
     }

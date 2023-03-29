@@ -40,6 +40,18 @@ public class ErasController {
     public ArrayList<Era> highlyRated(){
         return erasService.highlyRated();
     }
+
+    @GetMapping("/eras/rating/masters")
+    public ArrayList<Era> highlyRatedAndMasters(){
+        return erasService.highlyRatedAndMasters();
+    }
+
+    @GetMapping("/eras/masters/rating")
+    public ArrayList<Era> mastersAndHighlyRatedAndMasters(){
+        return erasService.highlyRatedAndMasters();
+    }
+
+
     //UPDATE
 
     //DELETE

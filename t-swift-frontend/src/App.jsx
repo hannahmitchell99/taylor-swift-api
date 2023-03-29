@@ -15,6 +15,8 @@ const App = () => {
     let url = "http://localhost:8080/eras"
     if (masters){
       url += `/masters`
+    }if (highRating){
+      url += `/rating`
     }
     const res = await fetch(url);
     data = await res.json();
@@ -24,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     getEras();
-  }, [masters]);
+  }, [masters, highRating]);
 
   const handleInput = (event) => {
     setInput(event.target.value.toLowerCase());
