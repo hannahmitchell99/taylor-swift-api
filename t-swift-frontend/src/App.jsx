@@ -33,6 +33,8 @@ const App = () => {
     console.log(input)
   };
 
+
+
   const handleHighRating = () => {
     setHighRating(!highRating);
     console.log(highRating);
