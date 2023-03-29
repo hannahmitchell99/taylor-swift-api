@@ -27,10 +27,19 @@ public class ErasController {
     }
 
     @GetMapping("/era/{id}")
-    public Era getEraById(@PathVariable int id){
+    public Era getEraById(@PathVariable int id) {
         return erasService.getErasById(id);
     }
 
+    @GetMapping("/eras/masters")
+    public ArrayList<Era> ownsMastersOfEras(){
+        return erasService.ownsMastersOfEras();
+    }
+
+    @GetMapping("/eras/rating")
+    public ArrayList<Era> highlyRated(){
+        return erasService.highlyRated();
+    }
     //UPDATE
 
     //DELETE

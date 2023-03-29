@@ -13,16 +13,14 @@
   &__info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas:
-      "name name name"
-      "image image image"
-      "image image image"
-      "genre inspo inspo"
-      "quote quote quote"
-      "buttons buttons buttons";
-
+        "name name name"
+        "image image image"
+        "genre inspo inspo"
+        "quote quote quote"
+        "buttons buttons buttons";
     &--heading {
       grid-area: name;
       font-family: $font-subheading;
@@ -55,10 +53,12 @@
     }
     &--quote {
       text-align: center;
+      margin: 1.5rem;
       grid-area: quote;
       font-family: $font-subheading;
       color: $colour-darklilac;
       font-weight: 700;
+      font-size: 1.5rem;
     }
 
     &--buttons {

@@ -4,6 +4,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 
+import static jdk.internal.math.FloatingDecimal.parseDouble;
+import static jdk.internal.math.FloatingDecimal.parseFloat;
+
 @Repository
 public class ErasRepository {
 
@@ -36,5 +39,24 @@ public class ErasRepository {
         return false;
     }
 
+    public ArrayList<Era> ownsMastersOfEras(){
+        ArrayList<Era> mastersEras= new ArrayList<Era>();
+        for(Era era: eras){
+            if(era.isOwnsMastersOfEra()){
+                mastersEras.add(era);
+            }
+        }
+        return mastersEras;
+    }
 
-}
+    public ArrayList<Era> highlyRated(){
+        ArrayList<Era> highRating= new ArrayList<Era>();
+        for(Era era: eras){
+            if(Double.parseDouble(era.getAlbumOfEra().get("rating"))>(double) (7.7)){
+                highRating.add(era);
+            }
+        }
+        return highRating;
+
+
+}}
