@@ -1,27 +1,27 @@
 package com.nology.taylorswift;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin
 public class ErasController {
 
     @Autowired
     ErasService erasService;
 
-    //CREATE
 
-    //READ
+    @PostMapping("/era")
+
+    public ResponseEntity<Era> createItem(@RequestBody Era era) {
+        erasService.addEra(era);
+        return ResponseEntity.status(HttpStatus.CREATED).body(era);
+    }
+
     @GetMapping("/eras")
     public List<Era> getEras(){
         return erasService.getAllEras();
@@ -53,6 +53,10 @@ public class ErasController {
     }
 
 
+//    @PostMapping("/era")
+//    public void addEra(@RequestBody Era era){
+//        erasService.addEra(era);
+//    }
     //UPDATE
 
     //DELETE

@@ -11,13 +11,13 @@ import java.util.List;
 public interface ErasRepository extends JpaRepository<Era, Long> {
 
 
-    @Query(value = "SELECT * FROM eras WHERE ownsMastersOfEra = 'true'", nativeQuery = true)
+    @Query(value = "SELECT * FROM era WHERE owns_masters_of_era = 1", nativeQuery = true)
     List<Era> ownsMastersOfEras();
 
-    @Query(value = "SELECT  * FROM eras WHERE json_value(albumOfEra,'$.rating')>'7.5'", nativeQuery = true)
+    @Query(value = "SELECT * FROM era WHERE album_id IN (SELECT id FROM album WHERE rating > 7.5)", nativeQuery = true)
     List<Era> highlyRated();
 
-    @Query(value = "SELECT  * FROM eras WHERE json_value(albumOfEra,'$.rating')>'7.5' AND  ownsMastersOfEra = 'true'", nativeQuery = true)
+    @Query(value = "SELECT  * FROM era WHERE album_id IN (SELECT id FROM album WHERE rating > 7.5) AND  owns_masters_of_era = 1", nativeQuery = true)
     List<Era> highlyRatedAndMasters();
 
 }

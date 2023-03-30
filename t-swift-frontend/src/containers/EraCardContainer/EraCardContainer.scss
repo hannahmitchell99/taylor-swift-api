@@ -1,13 +1,9 @@
+@import "../../styles/variables";
+
 .era-card-container__display{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.era-card-container__heading{
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 0;
-    margin-bottom: 10px;
+    background-color: $colour-paleblue;
 }

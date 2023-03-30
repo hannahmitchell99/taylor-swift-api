@@ -1,5 +1,6 @@
 import "../EraCard/EraCard.scss"
 
+
 const EraCard = ({name, albumCover, genre, eraIconicQuote, inspiration}) => {
 
     return (

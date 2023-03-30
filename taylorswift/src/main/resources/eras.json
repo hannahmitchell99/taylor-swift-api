@@ -1,232 +1,425 @@
 [
   {
-    "eraName": "Debut",
     "eraID": 1,
+    "eraName": "Debut",
     "albumOfEra": {
+      "id": 2,
       "name": "Taylor Swift",
       "genre": "Country",
-      "rating": "6.7",
+      "rating": 6.7,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-self-titled-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "5",
-      "numOfSongs": "11",
+      "peakChartPosition": 5,
+      "numOfSongs": 11,
       "dateReleased": "2006-10-26"
     },
     "eraDescription": "Taylor Swift's self-titled debut album was released in 2006. The album features country pop songs that were mainly written by Swift. The themes of the album focus on teenage love, heartbreak, and growing up. Swift was only 16 years old when she released this album, and her young age is reflected in the lyrics of the songs. The album was inspired by Swift's experiences in high school and her first few years in Nashville. The album's producer, Nathan Chapman, helped Swift craft a sound that combined country music with pop. The album received generally positive reviews and peaked at number five on the Billboard 200 chart.",
-    "eraColorScheme": ["turquoise", "light green", "brown"],
+    "eraColorScheme": [
+      "turquoise",
+      "light green",
+      "brown"
+    ],
     "eraStyle": {
+      "id": 2,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855958167-main.750x0c.jpg?interlace=true&quality=70",
-      "description": ["Casual", "youthful", "country", "rustic", "laid-back", "twee", "prom-like"],
-      "keyPieces": ["Knee-length sundresses", "cowboy boots", "sparkly minis", "tight ringlets", "chokers"]
+      "description": [
+        "Casual",
+        "youthful",
+        "country",
+        "rustic",
+        "laid-back",
+        "twee",
+        "prom-like"
+      ],
+      "keyPieces": [
+        "Knee-length sundresses",
+        "cowboy boots",
+        "sparkly minis",
+        "tight ringlets",
+        "chokers"
+      ]
     },
     "eraIconicQuote": "I don't know what I want, so don't ask me.",
     "ownsMastersOfEra": false,
-    "eraInspiration": ["teenage relationships", "exploring identity through the lens of relationships"]
+    "eraInspiration": [
+      "teenage relationships",
+      "exploring identity through the lens of relationships"
+    ]
   },
-   {
-     "eraName": "Fearless",
+  {
     "eraID": 2,
+    "eraName": "Fearless",
     "albumOfEra": {
+      "id": 3,
       "name": "Fearless",
       "genre": "Country",
-      "rating": "8.1",
+      "rating": 8.1,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-fearless-2008-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "13",
+      "peakChartPosition": 1,
+      "numOfSongs": 13,
       "dateReleased": "2008-11-11"
     },
     "eraDescription": "Swift's second album, Fearless, was released in 2008. The album features a mix of country and pop songs that were also mainly written by Swift. The themes of the album focus on love, heartbreak, and the fear of growing up. The album was inspired by Swift's experiences in high school and her first few years in the music industry. The album's producers, Nathan Chapman and Swift, created a sound that was more pop-focused than Swift's debut album. Fearless received critical acclaim and won four Grammy Awards, including Album of the Year.",
-    "eraColorScheme": ["gold", "warm yellow", "brown"],
+    "eraColorScheme": [
+      "gold",
+      "warm yellow",
+      "brown"
+    ],
     "eraStyle": {
+      "id": 3,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855660836-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "Romance", "whimsy", "sparkles", "princess-like", "schoolgirl"],
-      "keyPieces": [ "Sparkly dresses", "tulle", "softer bigger curls", "tons of bracelets", "knee-high socks", "black knee-high boots", "mini dresses"]
+      "description": [
+        "Romance",
+        "whimsy",
+        "sparkles",
+        "princess-like",
+        "schoolgirl"
+      ],
+      "keyPieces": [
+        "Sparkly dresses",
+        "tulle",
+        "softer bigger curls",
+        "tons of bracelets",
+        "knee-high socks",
+        "black knee-high boots",
+        "mini dresses"
+      ]
     },
     "eraIconicQuote": "Back then I swore I was gonna marry him someday, but I realized some bigger dreams of mine.",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["growing up", "heartbreak", "teenage angst"]
+    "eraInspiration": [
+      "growing up",
+      "heartbreak",
+      "teenage angst"
+    ]
   },
   {
-    "eraName": "Speak Now",
     "eraID": 3,
+    "eraName": "Speak Now",
     "albumOfEra": {
+      "id": 4,
       "name": "Speak Now",
       "genre": "Country",
-      "rating": "8.2",
+      "rating": 8.2,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/06/taylor-swift-speak-now-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "14",
+      "peakChartPosition": 1,
+      "numOfSongs": 14,
       "dateReleased": "2010-10-25"
     },
     "eraDescription": "Swift's third album, Speak Now, was released in 2010. The album features songs that were all written by Swift and produced by Nathan Chapman. The themes of the album focus on love, heartbreak, and standing up for oneself. The album was inspired by Swift's experiences in the music industry, as well as her personal life. Speak Now received positive reviews from critics and debuted at number one on the Billboard 200 chart. The album's lead single, \"Mine,\" was a commercial success, peaking at number three on the Billboard Hot 100 chart.",
-    "eraColorScheme": ["deep purple", "mauve", "red"],
+    "eraColorScheme": [
+      "deep purple",
+      "mauve",
+      "red"
+    ],
     "eraStyle": {
+      "id": 4,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855646870-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "feminine", "casual", "laid-back"],
-      "keyPieces": [ "graphic sweaters", "headbands", "high heels", "brown leather saddle bags"]
+      "description": [
+        "feminine",
+        "casual",
+        "laid-back"
+      ],
+      "keyPieces": [
+        "graphic sweaters",
+        "headbands",
+        "high heels",
+        "brown leather saddle bags"
+      ]
     },
     "eraIconicQuote": "I am not the kind of girl who should be rudely barging in on a white veil occasion, but you are not the kind of boy who should be marrying the wrong girl.",
     "ownsMastersOfEra": false,
-    "eraInspiration": ["coming of age", "heartbreak", "transition into womanhood"]
+    "eraInspiration": [
+      "coming of age",
+      "heartbreak",
+      "transition into womanhood"
+    ]
   },
-   {
-     "eraName": "Red",
+  {
     "eraID": 4,
+    "eraName": "Red",
     "albumOfEra": {
+      "id": 5,
       "name": "Red",
       "genre": "Country and Pop",
-      "rating": "9.0",
+      "rating": 9.0,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-red-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "14",
+      "peakChartPosition": 1,
+      "numOfSongs": 14,
       "dateReleased": "2012-10-22"
     },
     "eraDescription": "Taylor Swift's fourth album, Red, was released in 2012. The album features a mix of pop and country songs that were mainly written by Swift. The themes of the album focus on love, heartbreak, and change. The album was inspired by Swift's experiences in relationships, and her transition from country music to pop. The album features collaborations with various artists, including Ed Sheeran and Gary Lightbody. Red received positive reviews and debuted at number one on the Billboard 200 chart.",
-    "eraColorScheme": ["red", "light gold"],
+    "eraColorScheme": [
+      "red",
+      "light gold"
+    ],
     "eraStyle": {
+      "id": 5,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855670169-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "feminine", "vintage", "50s"],
-      "keyPieces": [ "tea-length skirts", "red lipstick", "kitten heels", "lace-up oxfords"]
+      "description": [
+        "feminine",
+        "vintage",
+        "50s"
+      ],
+      "keyPieces": [
+        "tea-length skirts",
+        "red lipstick",
+        "kitten heels",
+        "lace-up oxfords"
+      ]
     },
     "eraIconicQuote": "The idea you had of me, who was she? A never-needy, ever-lovely jewel whose shine reflects on you",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["fading romance", "heartbreak", "toxic relationships", "the uncertainty and excitement of early adulthood"]
+    "eraInspiration": [
+      "fading romance",
+      "heartbreak",
+      "toxic relationships",
+      "the uncertainty and excitement of early adulthood"
+    ]
   },
-   {
-     "eraName": "1989",
+  {
     "eraID": 5,
+    "eraName": "1989",
     "albumOfEra": {
+      "id": 6,
       "name": "1989",
       "genre": "Synth Pop",
-      "rating": "7.7",
+      "rating": 7.7,
       "cover": "https://www.billboard.com/wp-content/uploads/2015/06/taylor-swift-1989-album-billboard-1548.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "13",
+      "peakChartPosition": 1,
+      "numOfSongs": 13,
       "dateReleased": "2014-10-27"
     },
     "eraDescription": "Taylor Swift's fifth album, 1989, was released in 2014. The album features a pop sound and was mainly written by Swift. The themes of the album focus on love, heartbreak, and self-discovery. The album was inspired by Swift's move to New York City and her experiences living in the city. The album features collaborations with various artists, including Jack Antonoff and Ryan Tedder. 1989 received critical acclaim and won three Grammy Awards, including Album of the Year.",
-    "eraColorScheme": ["tan", "light blue"],
+    "eraColorScheme": [
+      "tan",
+      "light blue"
+    ],
     "eraStyle": {
+      "id": 6,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855684105-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "city chic", "off-duty model"],
-      "keyPieces": [ "co-ordinated sets", "crop tops", "stilettos"]
+      "description": [
+        "city chic",
+        "off-duty model"
+      ],
+      "keyPieces": [
+        "co-ordinated sets",
+        "crop tops",
+        "stilettos"
+      ]
     },
     "eraIconicQuote": "But you'll come back each time you leave 'cause, darling, I'm a nightmare dressed like a daydream.",
     "ownsMastersOfEra": false,
-    "eraInspiration": ["being young in a big city", "lighthearted approach to failed relationships", "media scrutiny of her relationships"]
+    "eraInspiration": [
+      "being young in a big city",
+      "lighthearted approach to failed relationships",
+      "media scrutiny of her relationships"
+    ]
   },
-   {
-     "eraName": "Reputation",
+  {
     "eraID": 6,
+    "eraName": "Reputation",
     "albumOfEra": {
+      "id": 7,
       "name": "Reputation",
       "genre": "Electropop",
-      "rating": "6.5",
+      "rating": 6.5,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-reputation-billboard-1240.jpg?w=1240",
-      "peakChartPosition": "1",
-      "numOfSongs": "15",
+      "peakChartPosition": 1,
+      "numOfSongs": 15,
       "dateReleased": "2017-10-11"
     },
     "eraDescription": "Taylor Swift's sixth album, Reputation, was released in 2017. The album features a pop sound with elements of electronic music and was mainly written by Swift. The themes of the album focus on fame, reputation, and self-discovery. The album was inspired by Swift's experiences with media scrutiny and her personal life. The album features collaborations with various artists, including Max Martin and Shellback. Reputation received mixed reviews, with some critics praising Swift's experimentation with new sounds and others criticizing the album's lack of cohesiveness. However, the album was a commercial success, debuting at number one on the Billboard 200 chart.",
-    "eraColorScheme": ["black", "white", "silver"],
+    "eraColorScheme": [
+      "black",
+      "white",
+      "silver"
+    ],
     "eraStyle": {
+      "id": 7,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855696703-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "grungey", "messy hot"],
-      "keyPieces": [ "bomber jacket", "cargo pants", "thigh high boots"]
+      "description": [
+        "grungey",
+        "messy hot"
+      ],
+      "keyPieces": [
+        "bomber jacket",
+        "cargo pants",
+        "thigh high boots"
+      ]
     },
     "eraIconicQuote": "I never trust a narcissist, but they love me",
     "ownsMastersOfEra": false,
-    "eraInspiration": ["revenge", "downsides of fame", "healthy romantic relationships", "betrayal"]
+    "eraInspiration": [
+      "revenge",
+      "downsides of fame",
+      "healthy romantic relationships",
+      "betrayal"
+    ]
   },
   {
-    "eraName": "Lover",
     "eraID": 7,
+    "eraName": "Lover",
     "albumOfEra": {
+      "id": 8,
       "name": "Lover",
       "genre": "Electropop",
-      "rating": "7.1",
+      "rating": 7.1,
       "cover": "https://www.billboard.com/wp-content/uploads/media/Taylor-Swift-Lover-album-art-2019-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "18",
+      "peakChartPosition": 1,
+      "numOfSongs": 18,
       "dateReleased": "2019-08-23"
     },
     "eraDescription": "Taylor Swift's seventh album, Lover, was released in 2019. The album features a mix of pop and alternative pop sounds and was mainly written by Swift. The themes of the album focus on love, heartbreak, and happiness. The album was inspired by Swift's personal life, including her relationship with actor Joe Alwyn. The album features collaborations with various artists, including Brendon Urie and Joel Little. Lover received generally positive reviews and debuted at number one on the Billboard 200 chart.",
-    "eraColorScheme": ["pastel pink", "hot pink", "pastel blue"],
+    "eraColorScheme": [
+      "pastel pink",
+      "hot pink",
+      "pastel blue"
+    ],
     "eraStyle": {
+      "id": 8,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855705541-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "pastel", "fun"],
-      "keyPieces": [ "tie-dye tees", "butterfly heels", "pastel menswear"]
+      "description": [
+        "pastel",
+        "fun"
+      ],
+      "keyPieces": [
+        "tie-dye tees",
+        "butterfly heels",
+        "pastel menswear"
+      ]
     },
     "eraIconicQuote": "I used to believe love would be burning red, but it's golden",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["commitment", "healing unhealthy patterns", "feminism", "love"]
+    "eraInspiration": [
+      "commitment",
+      "healing unhealthy patterns",
+      "feminism",
+      "love"
+    ]
   },
-   {
-  "eraName": "folklore",
+  {
     "eraID": 8,
+    "eraName": "folklore",
     "albumOfEra": {
+      "id": 9,
       "name": "Folklore",
       "genre": "Indie folk",
-      "rating": "8.0",
+      "rating": 8.0,
       "cover": "https://www.billboard.com/wp-content/uploads/2020/12/Taylor-swift-folklore-cover-billboard-1240-1607121703.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "16",
+      "peakChartPosition": 1,
+      "numOfSongs": 16,
       "dateReleased": "2020-07-24"
     },
     "eraDescription": "Taylor Swift's eighth album, Folklore, was a surprise release in 2020. The album features a more alternative sound and was mainly written by Swift during the COVID-19 pandemic. The themes of the album focus on nostalgia, escapism, and storytelling. The album was inspired by Swift's imagination and her love for storytelling. The album features collaborations with Aaron Dessner of The National and Jack Antonoff. Folklore received critical acclaim and was praised for its songwriting and production.",
-    "eraColorScheme": ["grey", "light orange", "light green", "brown"],
+    "eraColorScheme": [
+      "grey",
+      "light orange",
+      "light green",
+      "brown"
+    ],
     "eraStyle": {
+      "id": 9,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855724918-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "cottage core", "english countryside chic"],
-      "keyPieces": [ "plaid check coat", "gingham skirt", "chunky boots"]
+      "description": [
+        "cottage core",
+        "english countryside chic"
+      ],
+      "keyPieces": [
+        "plaid check coat",
+        "gingham skirt",
+        "chunky boots"
+      ]
     },
     "eraIconicQuote": "Isn't it just to pretty to think, all along there was some invisible string tying you to me?",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["escapism", "storytelling", "nostalgia", "empathy"]
+    "eraInspiration": [
+      "escapism",
+      "storytelling",
+      "nostalgia",
+      "empathy"
+    ]
   },
-   {
-     "eraName": "evermore",
+  {
     "eraID": 9,
+    "eraName": "evermore",
     "albumOfEra": {
+      "id": 10,
       "name": "Evermore",
       "genre": "Alternative rock",
-      "rating": "7.9",
+      "rating": 7.9,
       "cover": "https://www.billboard.com/wp-content/uploads/2020/12/taylor-swift-cover-2020-billboard-1240-1607612466.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "15",
-      "dateReleased": "11/12/2020"
+      "peakChartPosition": 1,
+      "numOfSongs": 15,
+      "dateReleased": "2020-11-12"
     },
     "eraDescription": "Evermore is Taylor Swift's ninth studio album and was released in 2020 as a sister album to Folklore. The album features indie folk and alternative sounds and was mainly written by Swift. The themes of the album focus on love, heartbreak, and personal growth. The album was inspired by Swift's experiences during the COVID-19 pandemic and her desire to create a sense of connection with her fans. The album features collaborations with various artists, including Bon Iver and The National. Evermore received critical acclaim, with many praising Swift's storytelling and musical experimentation. The album debuted at number one on the Billboard 200 chart and was nominated for Album of the Year at the 64th Annual Grammy Awards.",
-    "eraColorScheme": ["grey", "light orange", "light green", "brown"],
+    "eraColorScheme": [
+      "grey",
+      "light orange",
+      "light green",
+      "brown"
+    ],
     "eraStyle": {
+      "id": 10,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855724918-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "cottage core", "english countryside chic"],
-      "keyPieces": [ "plaid check coat", "gingham skirt", "chunky boots"]
+      "description": [
+        "cottage core",
+        "english countryside chic"
+      ],
+      "keyPieces": [
+        "plaid check coat",
+        "gingham skirt",
+        "chunky boots"
+      ]
     },
     "eraIconicQuote": "Life was a willow and it bent right to your wind",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["escapism", "complexities of human emotion", "grief"]
+    "eraInspiration": [
+      "escapism",
+      "complexities of human emotion",
+      "grief"
+    ]
   },
   {
-    "eraName": "Midnights",
     "eraID": 10,
+    "eraName": "Midnights",
     "albumOfEra": {
+      "id": 11,
       "name": "Midnights",
       "genre": "Dream pop",
-      "rating": "7.0",
+      "rating": 7.0,
       "cover": "https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-midnights-album-cover-2022-billboard-1240.jpg?w=1024",
-      "peakChartPosition": "1",
-      "numOfSongs": "15",
-      "dateReleased": "21/10/2020"
+      "peakChartPosition": 1,
+      "numOfSongs": 15,
+      "dateReleased": "2020-10-21"
     },
     "eraDescription": " A concept album about nocturnal ruminations, Midnights was written and produced by Swift with longtime collaborator Jack Antonoff. Inspired by Swift's 'sleepless nights', Midnights contains confessional yet cryptic lyrics, exploring anxiety, insecurity, self-criticism, self-awareness, insomnia, and self-confidence. Expanding on the synth-pop sound of Swift's previous pop projects, the album experiments with electronica, dream pop, bedroom pop, and chill-out music styles.",
-    "eraColorScheme": ["teal", "orange", "navy blue", "brown", "lilac"],
+    "eraColorScheme": [
+      "teal",
+      "orange",
+      "navy blue",
+      "brown",
+      "lilac"
+    ],
     "eraStyle": {
+      "id": 11,
       "image": "https://cdn.cliqueinc.com/posts/303774/taylor-swift-style-eras-303774-1671855758134-main.750x0c.jpg?interlace=true&quality=70",
-      "description": [ "70s", "vintage"],
-      "keyPieces": [ "corduroy ", "polo necks", "wide-legged trousers"]
+      "description": [
+        "70s",
+        "vintage"
+      ],
+      "keyPieces": [
+        "corduroy ",
+        "polo necks",
+        "wide-legged trousers"
+      ]
     },
     "eraIconicQuote": "It's me, hi I'm the problem, it's me",
     "ownsMastersOfEra": true,
-    "eraInspiration": ["self-awareness", "reflection", "insecurity"]
+    "eraInspiration": [
+      "self-awareness",
+      "reflection",
+      "insecurity"
+    ]
   }
 ]

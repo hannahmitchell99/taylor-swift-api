@@ -1,39 +1,59 @@
 package com.nology.taylorswift;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
 @Entity
+@Table(name = "era")
 public class Era {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long eraID;
-    private String eraName;
-    private HashMap<String, String> albumOfEra;
-    private String eraDescription;
-    private ArrayList<String> eraColorScheme;
-    private HashMap<String, ArrayList<String>> eraStyle;
+    private Long eraID;
 
+    @Column(name = "era_name")
+    private String eraName;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "album_id", referencedColumnName = "id")
+    private Album albumOfEra;
+
+    @Column(name = "era_description")
+    private String eraDescription;
+
+    @ElementCollection
+    @CollectionTable(name = "era_color_scheme")
+    @Column(name = "color")
+    private List<String> eraColorScheme;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "era_style_id", referencedColumnName = "id")
+    private EraStyle eraStyle;
+
+    @Column(name = "era_iconic_quote")
     private String eraIconicQuote;
+
+    @Column(name = "owns_masters_of_era")
     private boolean ownsMastersOfEra;
-    private ArrayList<String> eraInspiration;
+
+    @ElementCollection
+    @CollectionTable(name = "era_inspiration")
+    @Column(name = "inspiration")
+    private List<String> eraInspiration;
 
     public Era() {
     }
 
-    public Era(String eraName, long eraId, HashMap<String, String> albumOfEra, String eraDescription, ArrayList<String> eraColorScheme, HashMap<String, ArrayList<String>> eraStyle, String eraIconicQuote, boolean ownsMastersOfEra, ArrayList<String> eraInspiration) {
-        this.eraName = eraName;
-        this.eraID = eraId;
-        this.albumOfEra = albumOfEra;
-        this.eraDescription = eraDescription;
-        this.eraColorScheme = eraColorScheme;
-        this.eraStyle = eraStyle;
-        this.eraIconicQuote = eraIconicQuote;
-        this.ownsMastersOfEra = ownsMastersOfEra;
-        this.eraInspiration = eraInspiration;
+    public Long getEraID() {
+        return eraID;
+    }
+
+    public void setEraID(Long eraID) {
+        this.eraID = eraID;
     }
 
     public String getEraName() {
@@ -44,19 +64,11 @@ public class Era {
         this.eraName = eraName;
     }
 
-    public long getEraId() {
-        return eraID;
-    }
-
-    public void setEraId(long eraId) {
-        this.eraID = eraId;
-    }
-
-    public HashMap<String, String> getAlbumOfEra() {
+    public Album getAlbumOfEra() {
         return albumOfEra;
     }
 
-    public void setAlbumOfEra(HashMap<String, String> albumOfEra) {
+    public void setAlbumOfEra(Album albumOfEra) {
         this.albumOfEra = albumOfEra;
     }
 
@@ -68,15 +80,21 @@ public class Era {
         this.eraDescription = eraDescription;
     }
 
-    public ArrayList<String> getEraColorScheme() {
+    public List<String> getEraColorScheme() {
         return eraColorScheme;
     }
 
-    public void setEraColorScheme(ArrayList<String> eraColorScheme) {
+    public void setEraColorScheme(List<String> eraColorScheme) {
         this.eraColorScheme = eraColorScheme;
     }
 
+    public EraStyle getEraStyle() {
+        return eraStyle;
+    }
 
+    public void setEraStyle(EraStyle eraStyle) {
+        this.eraStyle = eraStyle;
+    }
 
     public String getEraIconicQuote() {
         return eraIconicQuote;
@@ -94,19 +112,23 @@ public class Era {
         this.ownsMastersOfEra = ownsMastersOfEra;
     }
 
-    public ArrayList<String> getEraInspiration() {
+    public List<String> getEraInspiration() {
         return eraInspiration;
     }
 
-    public void setEraInspiration(ArrayList<String> eraInspiration) {
+    public void setEraInspiration(List<String> eraInspiration) {
         this.eraInspiration = eraInspiration;
     }
 
-    public HashMap<String, ArrayList<String>> getEraStyle() {
-        return eraStyle;
-    }
-
-    public void setEraStyle(HashMap<String, ArrayList<String>> eraStyle) {
+    public Era(Long eraID, String eraName, Album albumOfEra, String eraDescription, List<String> eraColorScheme, EraStyle eraStyle, String eraIconicQuote, boolean ownsMastersOfEra, List<String> eraInspiration) {
+        this.eraID = eraID;
+        this.eraName = eraName;
+        this.albumOfEra = albumOfEra;
+        this.eraDescription = eraDescription;
+        this.eraColorScheme = eraColorScheme;
         this.eraStyle = eraStyle;
+        this.eraIconicQuote = eraIconicQuote;
+        this.ownsMastersOfEra = ownsMastersOfEra;
+        this.eraInspiration = eraInspiration;
     }
 }
