@@ -17,16 +17,20 @@ const App = () => {
       url += `/masters`
     }if (highRating){
       url += `/rating`
-    }
+    } 
     const res = await fetch(url);
     data = await res.json();
-    setEras(data);
+    let newData = data.filter((era) => (
+        era.eraName.toLowerCase().includes(input) ||
+        era.albumOfEra.name.toLowerCase().includes(input)
+      ))
+    setEras(newData);
     };
 
 
   useEffect(() => {
     getEras();
-  }, [masters, highRating]);
+  }, [masters, highRating, input]);
 
   const handleInput = (event) => {
     setInput(event.target.value.toLowerCase());
