@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.description{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    &__heading{
+        font-family: $font-heading;
+        text-align: center;
+        color: $colour-paleblue;
+    }
+
+    &__content{
+        display: flex;
+        align-self: center;
+        width: 60%;
+        font-family: $font-content;
+        text-align: center;
+        font-size: 0.75rem;
+        color: $colour-navy;
+
+    }
+}

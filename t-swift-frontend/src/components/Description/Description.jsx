@@ -20,8 +20,7 @@ const Description = ({type}) => {
                 <br/>Swift's early albums, released in the mid-2000s, featured country-inspired songs with relatable lyrics about teenage life, love, and heartbreak. Her self-titled debut album and its follow-up, Fearless, were both critical and commercial successes, earning her numerous awards and cementing her as a rising star in the country music scene.
                 <br/>With the release of Speak Now in 2010, Swift began to experiment with different sounds and musical styles. The album featured more pop-influenced tracks, such as "Mine" and "The Story of Us," which foreshadowed her eventual transition into mainstream pop music.
                 <br/>Swift's full embrace of pop came with the release of 1989 in 2014. The album marked a departure from her country roots and showcased a more synth-heavy sound, with catchy hooks and upbeat, danceable tracks. It was a critical and commercial success, earning Swift several awards and making her one of the biggest pop stars in the world.<br/>
-                <br/>In 2017, Swift released Reputation, which featured darker, more introspective songs that addressed the media scrutiny she had faced in recent years. The album also experimented with hip-hop and electronic music, showing Swift's continued willingness to push the boundaries of her sound.<br/>
-                <br/>Most recently, Swift's albums folklore and evermore have showcased a more stripped-down, indie-folk sound that has been praised by critics for its introspective lyrics and haunting melodies. Overall, Taylor Swift's music evolution has been marked by her willingness to experiment with different sounds and styles, while always maintaining her signature storytelling and emotional depth.<br/></p>
+                </p>
             </div>
           )
     }
