@@ -7,7 +7,13 @@ const Nav = ({ handleInput, handleHighRating, handleMasters }) => {
   return (
     <div className="nav">
       <div className="nav__heading">
+        <Link to="/album" style={{ textDecoration: "none" }}>
+          <button className="nav-button-album">All Era Albums</button>
+        </Link>
         <h3 className="nav__heading--text">Taylor Swift</h3>
+        <Link to="/style" style={{ textDecoration: "none" }}>
+          <button className="nav-button-styles">All Era Styles</button>
+        </Link>
       </div>
       <div className="nav__filtering">
         <NavSearch handleInput={handleInput} />
@@ -15,12 +21,6 @@ const Nav = ({ handleInput, handleHighRating, handleMasters }) => {
           handleHighRating={handleHighRating}
           handleMasters={handleMasters}
         />
-        <Link to="/album">
-          <button className="nav-button-album">All Era Albums</button>
-        </Link>
-        <Link to="/style">
-          <button className="nav-button-styles">All Era Styles</button>
-        </Link>
       </div>
     </div>
   );

@@ -3,16 +3,17 @@
 .nav{
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 35vh;
     width: 100vw;
     background-color: $colour-lilac;
     &__heading{
-        height: 15vh;
+        height: 25vh;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         &--text{
+            margin: 20px;
             color: $colour-offwhite;
             font-family: $font-heading;
             font-style: oblique;
@@ -27,4 +28,36 @@
         align-items: center;
         justify-content: center;
     }
+
 }
+
+.nav-button-album, .nav-button-styles {
+    font-family: $font-heading;
+    font-weight: 0;
+    font-size: 14px;
+    color: $colour-darklilac;
+    background-color: $colour-offwhite;
+    padding: 10px 30px;
+    border: 2px solid $colour-darklilac;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 12px;
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-button-album:hover, .nav-button-styles:hover {
+    transition: 1000ms;
+    padding: 10px 28px;
+    transform: translateY(-0px);
+    background-color: $colour-offwhite;
+    color: $colour-darklilac;
+    border: solid 2px $colour-darklilac;
+  }
+
+  
