@@ -21,8 +21,8 @@ const EraCard = ({name, albumCover, genre, eraIconicQuote, inspiration}) => {
       </div>
       <div className="era-card__quote">"{eraIconicQuote}"</div>
       <div className="era-card__buttons">
-        <button className="era-card__button">quick summary</button>
-        <button className="era-card__button">details, please!</button>
+        <button className="era-card__button">{name} era style</button>
+        <button className="era-card__button">{name} album details</button>
       </div>
     </div>
     )

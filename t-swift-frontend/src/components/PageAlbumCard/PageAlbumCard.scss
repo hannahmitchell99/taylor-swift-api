@@ -1,19 +1,35 @@
+@import "../../styles/variables";
+
 .album-card{
-    width: 30rem;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border: 1px solid black;
+    background-color: $colour-palestlilac;
+    &__name{
+        display: flex;
+        flex-direction: column;
+        font-family: $font-heading;
+        font-size: 3rem;
+        color: $colour-darklilac;
+    }
     &__info{
         display: flex;
         flex-direction: column;
+        font-family: $font-heading;
     }
     &__cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
         &--image{
-            max-width: 100%;
+            padding: 30px;
+            max-width: 75%;
             max-height: 100%;
-            display: block;
         }
     }
 }

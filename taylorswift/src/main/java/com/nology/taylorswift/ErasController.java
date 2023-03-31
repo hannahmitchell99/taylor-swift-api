@@ -53,10 +53,6 @@ public class ErasController {
     }
 
 
-//    @PostMapping("/era")
-//    public void addEra(@RequestBody Era era){
-//        erasService.addEra(era);
-//    }
     //UPDATE
 
     //DELETE

@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
+
+import { PageAlbumCardContainer } from "./containers/PageAlbumCardContainer/PageAlbumCardContainer";
+import { PageStyleCardContainer } from "./containers/PageStyleCardContainer/PageStyleCardContainer";
+import Album from "./pages/Album/Album";
 import Home from "./pages/Home/Home";
 
 const App = () => {
@@ -64,6 +68,14 @@ const App = () => {
               />
             }
           />
+          <Route path = "/album" element={<PageAlbumCardContainer eras= {eras}/>}/>
+          <Route path = "/style" element={<PageStyleCardContainer eras={eras}/>}/>
+          <Route
+        path = "/album/:eraId"
+        element={
+          <Album eras={eras}/>
+        }>
+        </Route>
         </Routes>
       </div>
     </Router>
