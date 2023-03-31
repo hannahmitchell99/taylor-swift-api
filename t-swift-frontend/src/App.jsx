@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
-
-import { PageAlbumCardContainer } from "./containers/PageAlbumCardContainer/PageAlbumCardContainer";
-import { PageStyleCardContainer } from "./containers/PageStyleCardContainer/PageStyleCardContainer";
 import Album from "./pages/Album/Album";
 import Home from "./pages/Home/Home";
+import AllStyle from "./pages/AllStyle/AllStyle";
+import AllAlbum from "./pages/AllAlbum/AllAlbum";
+import Style from "./pages/Style/Style";
 
 const App = () => {
-  const [showEras, setShowEras] = useState(false);
   const [eras, setEras] = useState([]);
   const [input, setInput] = useState("");
   const [highRating, setHighRating] = useState(false);
@@ -16,21 +15,22 @@ const App = () => {
 
   const getEras = async () => {
     let data = [];
-    let url = "http://localhost:8080/eras"
-    if (masters){
-      url += `/masters`
-    }if (highRating){
-      url += `/rating`
-    } 
+    let url = "http://localhost:8080/eras";
+    if (masters) {
+      url += `/masters`;
+    }
+    if (highRating) {
+      url += `/rating`;
+    }
     const res = await fetch(url);
     data = await res.json();
-    let newData = data.filter((era) => (
+    let newData = data.filter(
+      (era) =>
         era.eraName.toLowerCase().includes(input) ||
         era.albumOfEra.name.toLowerCase().includes(input)
-      ))
+    );
     setEras(newData);
-    };
-
+  };
 
   useEffect(() => {
     getEras();
@@ -38,10 +38,8 @@ const App = () => {
 
   const handleInput = (event) => {
     setInput(event.target.value.toLowerCase());
-    console.log(input)
+    console.log(input);
   };
-
-
 
   const handleHighRating = () => {
     setHighRating(!highRating);
@@ -52,7 +50,6 @@ const App = () => {
     console.log(masters);
     setMasters(!masters);
   };
-
   return (
     <Router>
       <div className="app">
@@ -68,14 +65,20 @@ const App = () => {
               />
             }
           />
-          <Route path = "/album" element={<PageAlbumCardContainer eras= {eras}/>}/>
-          <Route path = "/style" element={<PageStyleCardContainer eras={eras}/>}/>
           <Route
-        path = "/album/:eraId"
-        element={
-          <Album eras={eras}/>
-        }>
-        </Route>
+            path="/album"
+            element={<AllAlbum eras={eras} andleInput={handleInput}
+            handleHighRating={handleHighRating}
+            handleMasters={handleMasters}/>}
+          />
+          <Route
+            path="/style"
+            element={<AllStyle eras={eras} handleInput={handleInput}
+            handleHighRating={handleHighRating}
+            handleMasters={handleMasters}/>}
+          />
+          <Route path="/album/:eraID" element={<Album eras={eras} />}></Route>
+          <Route path="/style/:eraID" element={<Style eras={eras} />}></Route>
         </Routes>
       </div>
     </Router>

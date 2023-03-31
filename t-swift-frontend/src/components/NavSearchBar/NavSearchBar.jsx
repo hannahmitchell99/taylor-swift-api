@@ -4,7 +4,7 @@ import "../NavSearchBar/NavSearchBar.scss";
 const NavSearch = ({ handleInput }) => {
   return (
     <div className="nav-search">
-      <label for="nav-seach__searchbar">Search:</label>
+      <label htmlFor="nav-seach__searchbar">Search:</label>
       <input
         onChange={handleInput}
         type="text"

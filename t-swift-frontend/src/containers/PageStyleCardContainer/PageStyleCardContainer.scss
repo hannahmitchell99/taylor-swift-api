@@ -1,6 +1,9 @@
+@import "../../styles/variables";
+
 .styles-card-container__display{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: $colour-verypaleblue;
 }
